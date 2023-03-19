@@ -1,0 +1,18 @@
+https://www.reddit.com/r/cpp/comments/qtkb2s/modern_c_projects/
+
+https://www.codezclub.com/cpp-solved-programs-problems-solutions/
+
+https://www.youtube.com/@adamfowleruk
+https://www.youtube.com/watch?v=Xk5W9cHdz40
+
+palindrom
+permutation
+HCF
+LCM
+Prime Number
+
+
+
+Write a "simple" database from scratch. Like a super rundown version of sqlite that supports maybe just integers or something. Super complex but rewarding. When you get parsing, storage layer, buffer pools, query execution, query optiization, WAL and MVCC all thrown in.
+
+If you figure that is too easy, then make it a distributed database system

@@ -1,0 +1,133 @@
+Install Django
+———————————————————
+python -m pip install Django
+python3 -m pip install Django
+python3 -m django --version
+pip uninstall django
+
+
+pipenv install django
+sudo pip install --default-timeout=100 future
+
+———————————————————
+pipenv
+———————————————————
+mkdir folder && cd folder
+pipenv install django
+pipenv shell
+
+django-admin startproject {_______________}
+python manage.py runserver 9000
+
+
+python3 -m venv myvnv
+source myvenv/bin/activate
+
+
+pipenv install psycopg2-binary
+
+———————————————————
+postGreSql
+———————————————————
+
+psql -U postgres -W
+sudo -u postgres psql postgres
+sudo -u postgres psql
+psql -U postgres my_database
+
+psql -d <db-name> -U <username> -W
+psql -d tutorials_db -U admin -W
+
+List all databases - \l
+\l
+
+
+Switch to another database - \c
+List database tables - \dt
+Describe a table - \d
+List users and their roles - \du
+
+
+
+ALTER USER postgres PASSWORD 'root';
+
+sudo -u postgres psql -c "ALTER USER postgres PASSWORD 'root1234';"
+
+sudo gedit /etc/postgresql/9.3/main/pg_hba.conf
+
+CREATE DATABASE sample_app;
+CREATE DATABASE <database_name>;
+CREATE USER root WITH PASSWORD 'root';
+
+
+
+
+ALTER ROLE root SET client_encoding TO 'utf8';
+ALTER ROLE root SET default_transaction_isolation TO 'read committed';
+ALTER ROLE <username> SET timezone TO '<timezone>';
+
+
+SELECT * FROM pg_timezone_names;
+
+GRANT ALL PRIVILEGES ON DATABASE sample_app TO root;
+
+python manage.py makemigrations
+python manage.py migrate
+
+ALTER DATABASE sample_app OWNER TO root;
+
+python3 manage.py createsuperuser
+python3 manage.py migrate
+
+———————————————————
+Django comes with a utility that automatically generates the basic directory structure of an app, so you can focus on writing code rather than creating directories.
+
+
+
+https://docs.djangoproject.com/en/4.1/intro/tutorial01/
+
+pip install virtualenv
+pip3 install pipenv
+virtualenv --version
+
+virtualenv my_name
+pipenv shell
+
+django-admin
+django-admin startproject storefront
+django-admin startproject storefront .
+
+python manage.py runserver 9000
+
+
+pipenv --venv
+
+pipenv shell
+python manage.py startapp workshop
+
+
+Virtualenv location: /home/ahmad/.local/share/virtualenvs/storefront-lZPCmVct
+
+
+Like many of the Python package management tools, Pipenv supports installing a project's dependencies from a requirements file.
+
+
+What is Python virtual environment for?
+A virtual environment is a tool that helps to keep dependencies required by different projects separate by creating isolated python virtual environments for them.
+
+
+
+PIP is the Python-based package management system, it is very helpful in installing the python library,
+
+https://docs.djangoproject.com/en/4.1/intro/tutorial01/
+python manage.py runserver 8080
+———————————————————
+Install postgresql
+———————————————————
+sudo sh -c 'echo "deb http://apt.postgresql.org/pub/repos/apt $(lsb_release -cs)-pgdg main" > /etc/apt/sources.list.d/pgdg.list'
+
+createuser --interactive
+createdb mydb
+dropdb mydb
+
+psql mydb
